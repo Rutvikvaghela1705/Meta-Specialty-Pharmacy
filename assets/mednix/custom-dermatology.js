@@ -1,10 +1,10 @@
 /**
- * Mednix Dermatology - Interactive Engine
+ * Meta Specialty Pharmacy - Interactive Engine
  * Preloader, Sticky Header, Scroll Animations, Form Handlers & Sliders
  */
 
 document.addEventListener('DOMContentLoaded', function () {
-  console.log('Mednix Dermatology Interactive Engine Loaded');
+  console.log('Meta Specialty Pharmacy Interactive Engine Loaded');
 
   // 1. Dismiss preloader
   const preloader = document.getElementById('ht-preloader');
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     setTimeout(() => {
       preloader.classList.add('loaded');
       setTimeout(() => preloader.style.display = 'none', 500);
-    }, 600);
+    }, 850);
   }
 
   // Fallback after 2s
@@ -43,13 +43,12 @@ document.addEventListener('DOMContentLoaded', function () {
       '.elementor-widget-image',
       '.elementor-widget-icon-box',
       '.elementor-widget-counter',
-      '.service-item',
       '.team-member'
     ];
 
     targets.forEach(sel => {
       document.querySelectorAll(sel).forEach(el => {
-        if (!el.closest('.header') && !el.closest('.footer')) {
+        if (!el.closest('.header') && !el.closest('.footer') && !el.closest('.swiper')) {
           el.classList.add('mednix-reveal');
         }
       });
@@ -112,9 +111,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!toast) {
       const tHTML = `
         <div id="mednixToast" class="mednix-toast">
-          <i class="bi bi-check-circle-fill" style="color: #D4AF37; font-size: 24px;"></i>
+          <i class="bi bi-check-circle-fill" style="color: #f9b101; font-size: 24px;"></i>
           <div>
-            <h6 style="color: #D4AF37; margin: 0 0 4px 0; font-size: 15px;">${title}</h6>
+            <h6 style="color: #f9b101; margin: 0 0 4px 0; font-size: 15px;">${title}</h6>
             <p id="mednixToastMsg" style="margin: 0; font-size: 13px; color: #e2e8f0;">${msg}</p>
           </div>
         </div>
@@ -134,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function () {
       e.preventDefault();
       const nameInput = form.querySelector('input[type="text"], input[name*="name"]');
       const name = nameInput ? nameInput.value : 'Guest';
-      showToast('Appointment Request Received', `Thank you, ${name}! Our dermatology team will contact you shortly to confirm your time.`);
+      showToast('Appointment Request Received', `Thank you, ${name}! Our pharmacy care team will contact you shortly.`);
       form.reset();
     });
   });
@@ -161,4 +160,17 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   setTimeout(animateCounters, 1000);
+  // 8. Progress Bars Animation
+  function animateProgressBars() {
+    const bars = document.querySelectorAll('.elementor-progress-bar');
+    bars.forEach(bar => {
+      const max = bar.getAttribute('data-max');
+      if (max) {
+        bar.style.width = max + '%';
+        bar.style.transition = 'width 1.5s cubic-bezier(0.25, 1, 0.5, 1)';
+      }
+    });
+  }
+
+  setTimeout(animateProgressBars, 600);
 });

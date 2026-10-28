@@ -14,7 +14,13 @@
 }
 
 /* 2. Global Fonts & Typography */
-body, h1, h2, h3, h4, h5, h6 {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Mona Sans', sans-serif !important;
 }
 
@@ -75,27 +81,33 @@ header#masthead.is-sticky #header-sticky {
   from {
     transform: translateY(-100%);
   }
+
   to {
     transform: translateY(0);
   }
 }
 
 /* 6. Card hover transitions */
-.service-item, .team-member, .blog-card {
+.service-item,
+.team-member,
+.blog-card {
   transition: transform 0.35s ease, box-shadow 0.35s ease !important;
 }
 
-.service-item:hover, .team-member:hover {
+.service-item:hover,
+.team-member:hover {
   transform: translateY(-8px) !important;
   box-shadow: 0 15px 35px rgba(249, 177, 1, 0.15) !important;
 }
 
 /* 7. Image hover zoom */
-.team-member img, .service-item img {
+.team-member img,
+.service-item img {
   transition: transform 0.5s ease !important;
 }
 
-.team-member:hover img, .service-item:hover img {
+.team-member:hover img,
+.service-item:hover img {
   transform: scale(1.04) !important;
 }
 
@@ -177,3 +189,849 @@ header#masthead.is-sticky #header-sticky {
     linear-gradient(rgba(7, 21, 43, 0) 47%, rgba(7, 21, 43, 0.35)) !important;
 }
 
+
+
+/* ========================================================
+   Meta Specialty Pharmacy - Custom Preloader & Branding
+   ======================================================== */
+#ht-preloader {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: radial-gradient(circle at center, #0b1e38 0%, #07152b 70%, #040d1a 100%) !important;
+  z-index: 999999 !important;
+  overflow: hidden !important;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#ht-preloader.loaded {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+#ht-preloader .clear-loader,
+#ht-preloader .meta-loader-box {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  gap: 22px !important;
+  z-index: 1000 !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.meta-loader-sphere {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, rgba(14, 165, 233, 0.15) 0%, rgba(7, 21, 43, 0.85) 75%);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.55), 0 0 30px rgba(14, 165, 233, 0.25);
+}
+
+.meta-loader-inner {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  animation: meta-loader-rotate 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  z-index: 1;
+}
+
+@keyframes meta-loader-rotate {
+  0% {
+    transform: rotate(0deg);
+    box-shadow:
+      0 6px 18px 0 rgba(255, 255, 255, 0.75) inset,
+      0 18px 30px 0 rgba(0, 180, 216, 0.8) inset,
+      0 45px 55px 0 rgba(245, 158, 11, 0.6) inset;
+  }
+
+  50% {
+    transform: rotate(180deg);
+    box-shadow:
+      0 6px 18px 0 rgba(255, 255, 255, 0.75) inset,
+      0 18px 30px 0 rgba(245, 158, 11, 0.8) inset,
+      0 45px 55px 0 rgba(0, 180, 216, 0.6) inset;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    box-shadow:
+      0 6px 18px 0 rgba(255, 255, 255, 0.75) inset,
+      0 18px 30px 0 rgba(0, 180, 216, 0.8) inset,
+      0 45px 55px 0 rgba(245, 158, 11, 0.6) inset;
+  }
+}
+
+.meta-loader-emblem {
+  position: relative;
+  z-index: 2;
+  width: 82px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: meta-pulse 2s ease-in-out infinite;
+}
+
+.meta-loader-emblem img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes meta-pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 12px rgba(245, 158, 11, 0.4));
+  }
+
+  50% {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 25px rgba(0, 180, 216, 0.8));
+  }
+}
+
+.meta-loader-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.meta-loader-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--themeht-typography-body-font-family, 'Mona Sans', sans-serif);
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+  user-select: none;
+}
+
+.meta-loader-title .meta-letter {
+  display: inline-block;
+  opacity: 0.5;
+  animation: meta-letter-anim 1.8s ease-in-out infinite;
+}
+
+.meta-loader-title .meta-letter.gold {
+  color: #f9b101;
+}
+
+.meta-loader-title .meta-letter:nth-child(1) {
+  animation-delay: 0.0s;
+}
+
+.meta-loader-title .meta-letter:nth-child(2) {
+  animation-delay: 0.08s;
+}
+
+.meta-loader-title .meta-letter:nth-child(3) {
+  animation-delay: 0.16s;
+}
+
+.meta-loader-title .meta-letter:nth-child(4) {
+  animation-delay: 0.24s;
+}
+
+.meta-loader-title .meta-letter:nth-child(5) {
+  animation-delay: 0.32s;
+}
+
+.meta-loader-title .meta-letter:nth-child(6) {
+  animation-delay: 0.40s;
+}
+
+.meta-loader-title .meta-letter:nth-child(7) {
+  animation-delay: 0.48s;
+}
+
+.meta-loader-title .meta-letter:nth-child(8) {
+  animation-delay: 0.56s;
+}
+
+.meta-loader-title .meta-letter:nth-child(9) {
+  animation-delay: 0.64s;
+}
+
+.meta-loader-title .meta-letter:nth-child(10) {
+  animation-delay: 0.72s;
+}
+
+.meta-loader-title .meta-letter:nth-child(11) {
+  animation-delay: 0.80s;
+}
+
+.meta-loader-title .meta-letter:nth-child(12) {
+  animation-delay: 0.88s;
+}
+
+.meta-loader-title .meta-letter:nth-child(13) {
+  animation-delay: 0.96s;
+}
+
+@keyframes meta-letter-anim {
+
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: translateY(0);
+  }
+
+  30% {
+    opacity: 1;
+    transform: translateY(-3px) scale(1.1);
+    text-shadow: 0 0 14px rgba(249, 177, 1, 0.75);
+  }
+
+  60% {
+    opacity: 0.7;
+    transform: translateY(0);
+  }
+}
+
+.meta-loader-subtitle {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #00c2cb;
+  text-transform: uppercase;
+  opacity: 0.95;
+}
+
+.meta-loader-line {
+  width: 140px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.meta-loader-line span {
+  display: block;
+  height: 100%;
+  width: 40%;
+  background: linear-gradient(90deg, #00c2cb, #f9b101);
+  border-radius: 3px;
+  animation: meta-bar-move 1.4s ease-in-out infinite alternate;
+}
+
+@keyframes meta-bar-move {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(250%);
+  }
+}
+
+
+/* ========================================================
+   Meta Pharmacy - Service Slider Cards (Style-8 Enhancements)
+   ======================================================== */
+.service-item.style-8 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #07152b;
+  box-shadow: 0 10px 30px rgba(7, 21, 43, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-item.style-8:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(7, 21, 43, 0.22);
+}
+
+.service-item.style-8 .service-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #0b1e38;
+}
+
+.service-item.style-8 .service-image:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(7, 21, 43, 0) 35%, rgba(7, 21, 43, 0.75) 68%, rgba(7, 21, 43, 0.96) 100%) !important;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.service-item.style-8 .service-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.service-item.style-8:hover .service-image img {
+  transform: scale(1.08);
+}
+
+/* Safeguard: Only service slider cards and their duplicate clones must be kept visible */
+.service-swiper .swiper-slide .service-item,
+.service-swiper .swiper-slide-duplicate .service-item,
+.service-swiper .swiper-slide .mednix-reveal,
+.service-swiper .swiper-slide-duplicate .mednix-reveal {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.service-item.style-8 .service-icon,
+.service-item.style-8:hover .service-icon {
+  margin-bottom: 16px;
+  z-index: 2;
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+  border-radius: 14px;
+  font-size: 24px;
+  color: #07152b !important;
+  background: #f9b101 !important;
+  background-color: #f9b101 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+.service-item.style-8 .service-icon i,
+.service-item.style-8:hover .service-icon i {
+  color: #07152b !important;
+  font-size: 24px !important;
+  text-shadow: none !important;
+  filter: none !important;
+  transition: none !important;
+}
+
+.service-item.style-8 .service-desc {
+  position: absolute;
+  bottom: -45px;
+  left: 30px;
+  right: 30px;
+  z-index: 9;
+  transition: bottom 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.service-item.style-8:hover .service-desc {
+  bottom: 30px;
+}
+
+.service-item.style-8 .service-title h4 {
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.service-item.style-8 .service-title h4 a,
+.service-item.style-8:hover .service-title h4 a,
+.service-item.style-8 .service-title h4 a:hover {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  transition: none !important;
+}
+
+.service-item.style-8 .service-desc p {
+  color: #e2e8f0 !important;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 25px;
+  margin-bottom: 0;
+  transition: margin 0.4s ease;
+}
+
+.service-item.style-8:hover .service-desc p {
+  margin-top: 10px;
+}
+
+/* ========================================================
+   Meta Pharmacy - Consultation Booking Image & Section
+   ======================================================== */
+.elementor-11015 .elementor-element.elementor-element-97c1a28:not(.elementor-motion-effects-element-type-background),
+.elementor-11015 .elementor-element.elementor-element-97c1a28>.elementor-motion-effects-container>.elementor-motion-effects-layer,
+.elementor-element.elementor-element-97c1a28 {
+  background-image: url("../../assets/images/pharmacy-consultation-booking.jpg") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+
+/* ========================================================
+   Meta Specialty Pharmacy - Logo Brand Gold/Yellow Accents (#f9b101)
+   ======================================================== */
+
+/* 1. Header Phone & Call Highlights */
+.header-call .themeht-icon svg path,
+.header-call .themeht-icon {
+  color: #f9b101 !important;
+  fill: #f9b101 !important;
+}
+
+.header-call-title {
+  color: #f9b101 !important;
+  font-weight: 600;
+}
+
+/* 2. Subtitle Section Pulsing Dots */
+.theme-title h6:before,
+.ht-subtitle h6:before {
+  background: #f9b101 !important;
+  box-shadow: 0 0 10px rgba(249, 177, 1, 0.8) !important;
+}
+
+/* 3. Slider Navigation Buttons & Bullets */
+.banner-slider .swiper-button-next:hover,
+.banner-slider .swiper-button-prev:hover {
+  background-color: #f9b101 !important;
+  border-color: #f9b101 !important;
+}
+
+.banner-slider .swiper-button-next:hover:after,
+.banner-slider .swiper-button-prev:hover:after {
+  color: #07152b !important;
+}
+
+.service-swiper .swiper-pagination-bullet-active {
+  background: #f9b101 !important;
+  width: 28px !important;
+  border-radius: 6px !important;
+  opacity: 1 !important;
+}
+
+/* 4. About Us Feature Checklist Icons */
+.list-icon li i {
+  color: #f9b101 !important;
+  font-size: 18px !important;
+}
+
+/* 5. Why Choose Us - Feature Box Icons & Layout */
+.elementor-element.elementor-element-d84b95f {
+  padding-right: 0 !important;
+  --padding-right: 0px !important;
+}
+
+.featured-item.style-4 {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 16px !important;
+  width: 100% !important;
+}
+
+.featured-item.style-4 .featured-icon {
+  width: 52px !important;
+  height: 52px !important;
+  min-width: 52px !important;
+  min-height: 52px !important;
+  border-radius: 12px !important;
+  background: rgba(0, 102, 204, 0.16) !important;
+  border: 1px solid rgba(56, 189, 248, 0.3) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 22px !important;
+  flex-shrink: 0 !important;
+  transition: all 0.3s ease !important;
+}
+
+.featured-item.style-4 .featured-icon i {
+  color: #38bdf8 !important; /* Medical sky blue / cyan */
+  font-size: 22px !important;
+  line-height: 1 !important;
+  transition: transform 0.3s ease, color 0.3s ease !important;
+}
+
+.featured-item.style-4:hover .featured-icon {
+  background: rgba(0, 102, 204, 0.32) !important;
+  border-color: #38bdf8 !important;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.35) !important;
+  transform: translateY(-2px);
+}
+
+.featured-item.style-4:hover .featured-icon i {
+  color: #ffffff !important;
+  transform: scale(1.1);
+}
+
+.featured-item.style-4 .featured-desc {
+  flex: 1;
+  min-width: 0;
+}
+
+.featured-item.style-4 .featured-title h4 {
+  margin-bottom: 6px !important;
+  font-size: 19px !important;
+  line-height: 1.3 !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  white-space: nowrap !important;
+}
+
+.featured-item.style-4 .featured-desc p {
+  margin-bottom: 0 !important;
+  font-size: 14.5px !important;
+  line-height: 24px !important;
+  color: rgba(255, 255, 255, 0.72) !important;
+}
+
+@media (max-width: 768px) {
+  .featured-item.style-4 .featured-title h4 {
+    white-space: normal !important;
+    font-size: 18px !important;
+  }
+}
+
+.elementor-progress-percentage {
+  color: #38bdf8 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
+}
+
+.elementor-widget-progress .elementor-progress-wrapper .elementor-progress-bar {
+  background: linear-gradient(90deg, #0284c7 0%, #38bdf8 100%) !important;
+  border-radius: 6px !important;
+}
+
+/* 6. Marquee Rotating Stars */
+.marquee-wrap.style1 .marquee-text i.flaticon-asterisk-1 {
+  color: #f9b101 !important;
+  text-shadow: 0 0 14px rgba(249, 177, 1, 0.55);
+}
+
+/* 7. Consultation Contact Badges & Form Button */
+.elementor-element-7867aa6 .elementor-icon-box-icon .elementor-icon {
+  background: linear-gradient(135deg, #0284c7 0%, #0066cc 100%) !important;
+  background-color: #0066cc !important;
+  color: #ffffff !important;
+  width: 54px !important;
+  height: 54px !important;
+  border-radius: 14px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 8px 20px rgba(0, 102, 204, 0.25) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.elementor-element-7867aa6 .elementor-icon-box-icon .elementor-icon i {
+  color: #ffffff !important;
+  font-size: 24px !important;
+}
+
+.elementor-element-7867aa6 .elementor-position-inline-start:hover .elementor-icon {
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 12px 24px rgba(0, 102, 204, 0.35) !important;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form input[type="tel"]:focus,
+.contact-form input[type="date"]:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #0066cc !important;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.18) !important;
+}
+
+/* Ensure <button> elements with themeht-btn match header & hero <a> buttons perfectly */
+.wpcf7-form .themeht-btn,
+.wpcf7-form .themeht-btn.primary-btn,
+button.themeht-btn,
+button.themeht-btn.primary-btn,
+.wpcf7-submit.themeht-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: row-reverse !important;
+  gap: 16px !important;
+  padding: 4px 4px 4px 26px !important;
+  border-radius: 8px !important;
+  border: none !important;
+  outline: none !important;
+  cursor: pointer !important;
+  background: linear-gradient(135deg, #0056b3 0%, #0077e6 100%) !important;
+  color: #ffffff !important;
+  font-family: inherit !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+  box-shadow: 0 6px 20px rgba(0, 102, 204, 0.35) !important;
+  transition: all 0.35s ease !important;
+  overflow: hidden !important;
+  height: 53px !important;
+  box-sizing: border-box !important;
+  text-decoration: none !important;
+}
+
+.wpcf7-form .themeht-btn:hover,
+.wpcf7-form .themeht-btn.primary-btn:hover,
+button.themeht-btn:hover,
+button.themeht-btn.primary-btn:hover,
+.wpcf7-submit.themeht-btn:hover {
+  background: linear-gradient(135deg, #004494 0%, #0062d2 100%) !important;
+  box-shadow: 0 8px 25px rgba(0, 102, 204, 0.5) !important;
+  transform: translateY(-2px) !important;
+}
+
+.wpcf7-form .themeht-btn .btn-text,
+button.themeht-btn .btn-text {
+  display: inline-block !important;
+  position: relative !important;
+  color: transparent !important;
+  text-shadow: 0 0 #ffffff, 0 22px #ffffff !important;
+  transition: text-shadow 0.5s ease-in-out !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.2px !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.wpcf7-form .themeht-btn:hover .btn-text,
+button.themeht-btn:hover .btn-text {
+  text-shadow: 0 -22px #ffffff, 0 0 #ffffff !important;
+}
+
+.wpcf7-form .themeht-btn .btn-icon,
+button.themeht-btn .btn-icon {
+  width: 45px !important;
+  height: 45px !important;
+  min-width: 45px !important;
+  min-height: 45px !important;
+  border-radius: 5px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: #ffffff !important;
+  color: #0066cc !important;
+  overflow: hidden !important;
+  position: relative !important;
+  margin: 0 !important;
+  transition: all 400ms ease !important;
+}
+
+.wpcf7-form .themeht-btn .btn-icon i:first-child,
+button.themeht-btn .btn-icon i:first-child {
+  transform: translateX(12px) !important;
+  transition: transform 400ms ease !important;
+}
+
+.wpcf7-form .themeht-btn .btn-icon i:last-child,
+button.themeht-btn .btn-icon i:last-child {
+  transform: translateX(-100px) !important;
+  transition: transform 400ms ease !important;
+}
+
+.wpcf7-form .themeht-btn:hover .btn-icon i:first-child,
+button.themeht-btn:hover .btn-icon i:first-child {
+  transform: translateX(100px) !important;
+}
+
+.wpcf7-form .themeht-btn:hover .btn-icon i:last-child,
+button.themeht-btn:hover .btn-icon i:last-child {
+  transform: translateX(-11px) !important;
+}
+
+/* 8. Testimonials Section Styling & Brand Color Integration */
+.elementor-element-b1f0d0c {
+  background: linear-gradient(180deg, #edf5fd 0%, #f4f8fe 100%) !important;
+  padding: 120px 0 100px !important;
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Ensure marquee container stretches and encloses both slider rows */
+.elementor-element-afbec7b {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 30px !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.elementor-element-f580ea9,
+.elementor-element-ca96e52 {
+  width: 100% !important;
+  position: relative !important;
+  height: auto !important;
+}
+
+/* Testimonial Cards */
+.testimonial.style-1 {
+  background: #ffffff !important;
+  width: 420px !important;
+  max-width: 420px !important;
+  border-radius: 18px !important;
+  padding: 32px 30px 28px !important;
+  margin: 15px 0 !important;
+  border: 1px solid rgba(7, 21, 43, 0.07) !important;
+  border-bottom: 3px solid #0066cc !important;
+  transition: all 0.35s ease !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+.testimonial.style-1:hover {
+  transform: translateY(-6px) !important;
+  border-color: rgba(0, 102, 204, 0.3) !important;
+  border-bottom: 3px solid #f9b101 !important;
+}
+
+/* Author Avatar & Caption */
+.testimonial .testimonial-author {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+}
+
+.testimonial .testimonial-img {
+  width: 65px !important;
+  height: 65px !important;
+  min-width: 65px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  border: 2.5px solid #0066cc !important;
+  box-shadow: 0 4px 10px rgba(0, 102, 204, 0.15) !important;
+  transition: border-color 0.3s ease !important;
+}
+
+.testimonial.style-1:hover .testimonial-img {
+  border-color: #f9b101 !important;
+}
+
+.testimonial .testimonial-img img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.testimonial .testimonial-caption h5 {
+  color: #07152b !important;
+  font-weight: 700 !important;
+  font-size: 17.5px !important;
+  line-height: 1.3 !important;
+  margin-bottom: 3px !important;
+  transition: color 0.3s ease !important;
+}
+
+.testimonial.style-1:hover .testimonial-caption h5 {
+  color: #0066cc !important;
+}
+
+.testimonial .testimonial-caption label {
+  color: #0066cc !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.3px !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+/* Review Content Paragraph */
+.testimonial p {
+  color: #475569 !important;
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+  margin: 18px 0 20px !important;
+  font-weight: 400 !important;
+  letter-spacing: normal !important;
+}
+
+/* Golden Star Ratings */
+.testimonial-rating {
+  display: flex !important;
+  align-items: center !important;
+  gap: 3px !important;
+}
+
+.testimonial-rating i,
+.testimonial-rating .bi-star-fill,
+.testimonial-rating .bi-star-half {
+  color: #f9b101 !important;
+  font-size: 16px !important;
+}
+
+/* Responsive adjustment for cards on mobile/tablet */
+@media (max-width: 768px) {
+  .testimonial.style-1 {
+    width: 320px !important;
+    padding: 24px 20px !important;
+  }
+}
+
+
+
+
+
+/* 11. Footer Contact Icons & Social Media */
+.contact-info li .contact-icon {
+  background: #f9b101 !important;
+  color: #07152b !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(249, 177, 1, 0.25) !important;
+}
+
+.contact-info li .contact-icon i {
+  color: #07152b !important;
+}
+
+.widget-title:after,
+.themeht-widget-title:after {
+  background: #f9b101 !important;
+}
+
+/* 12. Scroll-to-Top Button */
+.scroll-top,
+#scroll-top {
+  border-color: #f9b101 !important;
+}
+
+.scroll-top:hover,
+#scroll-top:hover {
+  background-color: #f9b101 !important;
+  color: #07152b !important;
+}
