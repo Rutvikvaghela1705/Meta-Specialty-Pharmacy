@@ -1,0 +1,801 @@
+/*!
+*    ______ _       _   _
+*    |  ____| |     | | (_)
+*    | |__  | | __ _| |_ _  ___ ___  _ __
+*    |  __| | |/ _` | __| |/ __/ _ \| '_ \
+*    | |    | | (_| | |_| | (_| (_) | | | |
+*    |_|    |_|\__,_|\__|_|\___\___/|_| |_|
+*
+*         https://www.flaticon.com
+*/
+
+@font-face {
+    font-family: "flaticon_mycollection";
+    src: url("../fonts/flaticon_mycollection.woff2?b545f1f9b7418af610399eab25c82690") format("woff2"),
+url("../fonts/flaticon_mycollection.woff?b545f1f9b7418af610399eab25c82690") format("woff"),
+url("../fonts/flaticon_mycollection.eot?b545f1f9b7418af610399eab25c82690#iefix") format("embedded-opentype"),
+url("../fonts/flaticon_mycollection.ttf?b545f1f9b7418af610399eab25c82690") format("truetype"),
+url("../fonts/flaticon_mycollection.svg?b545f1f9b7418af610399eab25c82690#flaticon_mycollection") format("svg")
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_mycollection !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: -0.125em;
+}
+
+.flaticon-facebook-app-symbol:before {
+    content: "\f101";
+}
+.flaticon-twitter:before {
+    content: "\f102";
+}
+.flaticon-instagram:before {
+    content: "\f103";
+}
+.flaticon-linkedin:before {
+    content: "\f104";
+}
+.flaticon-youtube:before {
+    content: "\f105";
+}
+.flaticon-whatsapp:before {
+    content: "\f106";
+}
+.flaticon-dribble:before {
+    content: "\f107";
+}
+.flaticon-reddit-logo:before {
+    content: "\f108";
+}
+.flaticon-viber:before {
+    content: "\f109";
+}
+.flaticon-tik-tok:before {
+    content: "\f10a";
+}
+.flaticon-asterisk:before {
+    content: "\f10b";
+}
+.flaticon-asterisk-1:before {
+    content: "\f10c";
+}
+.flaticon-phone-call:before {
+    content: "\f10d";
+}
+.flaticon-customer-service:before {
+    content: "\f10e";
+}
+.flaticon-telephone:before {
+    content: "\f10f";
+}
+.flaticon-phone-call-1:before {
+    content: "\f110";
+}
+.flaticon-support:before {
+    content: "\f111";
+}
+.flaticon-center:before {
+    content: "\f112";
+}
+.flaticon-phone-call-2:before {
+    content: "\f113";
+}
+.flaticon-email:before {
+    content: "\f114";
+}
+.flaticon-email-1:before {
+    content: "\f115";
+}
+.flaticon-email-2:before {
+    content: "\f116";
+}
+.flaticon-email-3:before {
+    content: "\f117";
+}
+.flaticon-email-4:before {
+    content: "\f118";
+}
+.flaticon-pin:before {
+    content: "\f119";
+}
+.flaticon-pin-1:before {
+    content: "\f11a";
+}
+.flaticon-home-address:before {
+    content: "\f11b";
+}
+.flaticon-web:before {
+    content: "\f11c";
+}
+.flaticon-globe:before {
+    content: "\f11d";
+}
+.flaticon-world-wide-web:before {
+    content: "\f11e";
+}
+.flaticon-award-symbol:before {
+    content: "\f11f";
+}
+.flaticon-award:before {
+    content: "\f120";
+}
+.flaticon-medal:before {
+    content: "\f121";
+}
+.flaticon-olive-branches-award-symbol:before {
+    content: "\f122";
+}
+.flaticon-trophy:before {
+    content: "\f123";
+}
+.flaticon-award-1:before {
+    content: "\f124";
+}
+.flaticon-medal-1:before {
+    content: "\f125";
+}
+.flaticon-winner:before {
+    content: "\f126";
+}
+.flaticon-award-2:before {
+    content: "\f127";
+}
+.flaticon-calendar:before {
+    content: "\f128";
+}
+.flaticon-schedule:before {
+    content: "\f129";
+}
+.flaticon-schedule-1:before {
+    content: "\f12a";
+}
+.flaticon-user:before {
+    content: "\f12b";
+}
+.flaticon-user-1:before {
+    content: "\f12c";
+}
+.flaticon-edit-image:before {
+    content: "\f12d";
+}
+.flaticon-edit-file:before {
+    content: "\f12e";
+}
+.flaticon-document:before {
+    content: "\f12f";
+}
+.flaticon-folder:before {
+    content: "\f130";
+}
+.flaticon-folder-1:before {
+    content: "\f131";
+}
+.flaticon-quote:before {
+    content: "\f132";
+}
+.flaticon-quotation:before {
+    content: "\f133";
+}
+.flaticon-comma:before {
+    content: "\f134";
+}
+.flaticon-quotes:before {
+    content: "\f135";
+}
+.flaticon-check-mark:before {
+    content: "\f136";
+}
+.flaticon-checked:before {
+    content: "\f137";
+}
+.flaticon-check-mark-1:before {
+    content: "\f138";
+}
+.flaticon-check:before {
+    content: "\f139";
+}
+.flaticon-read:before {
+    content: "\f13a";
+}
+.flaticon-thin-arrow:before {
+    content: "\f13b";
+}
+.flaticon-right-up:before {
+    content: "\f13c";
+}
+.flaticon-arrow:before {
+    content: "\f13d";
+}
+.flaticon-right-arrow:before {
+    content: "\f13e";
+}
+.flaticon-right-arrow-1:before {
+    content: "\f13f";
+}
+.flaticon-arrow-left:before {
+    content: "\f140";
+}
+.flaticon-chat:before {
+    content: "\f141";
+}
+.flaticon-back-in-time:before {
+    content: "\f142";
+}
+.flaticon-gallery:before {
+    content: "\f143";
+}
+.flaticon-play-button:before {
+    content: "\f144";
+}
+.flaticon-play:before {
+    content: "\f145";
+}
+.flaticon-play-button-1:before {
+    content: "\f146";
+}
+.flaticon-play-1:before {
+    content: "\f147";
+}
+.flaticon-play-2:before {
+    content: "\f148";
+}
+.flaticon-share:before {
+    content: "\f149";
+}
+.flaticon-paper-plane:before {
+    content: "\f14a";
+}
+.flaticon-clean-tooth:before {
+    content: "\f14b";
+}
+.flaticon-dentistry:before {
+    content: "\f14c";
+}
+.flaticon-tooth:before {
+    content: "\f14d";
+}
+.flaticon-dentist:before {
+    content: "\f14e";
+}
+.flaticon-add:before {
+    content: "\f14f";
+}
+.flaticon-hospital:before {
+    content: "\f150";
+}
+.flaticon-pediatric:before {
+    content: "\f151";
+}
+.flaticon-braces:before {
+    content: "\f152";
+}
+.flaticon-braces-1:before {
+    content: "\f153";
+}
+.flaticon-tooth-whitening:before {
+    content: "\f154";
+}
+.flaticon-tooth-brush:before {
+    content: "\f155";
+}
+.flaticon-tooth-extraction:before {
+    content: "\f156";
+}
+.flaticon-tooth-extraction-1:before {
+    content: "\f157";
+}
+.flaticon-tooth-1:before {
+    content: "\f158";
+}
+.flaticon-tooth-2:before {
+    content: "\f159";
+}
+.flaticon-dental-checkup:before {
+    content: "\f15a";
+}
+.flaticon-eye-exam:before {
+    content: "\f15b";
+}
+.flaticon-eye:before {
+    content: "\f15c";
+}
+.flaticon-eye-1:before {
+    content: "\f15d";
+}
+.flaticon-eye-recognition:before {
+    content: "\f15e";
+}
+.flaticon-retina-scan:before {
+    content: "\f15f";
+}
+.flaticon-cornea:before {
+    content: "\f160";
+}
+.flaticon-taking-care:before {
+    content: "\f161";
+}
+.flaticon-online-marketing:before {
+    content: "\f162";
+}
+.flaticon-health:before {
+    content: "\f163";
+}
+.flaticon-occupational-therapy:before {
+    content: "\f164";
+}
+.flaticon-physical-therapy:before {
+    content: "\f165";
+}
+.flaticon-injury:before {
+    content: "\f166";
+}
+.flaticon-broken-bone:before {
+    content: "\f167";
+}
+.flaticon-neurology:before {
+    content: "\f168";
+}
+.flaticon-ultherapy:before {
+    content: "\f169";
+}
+.flaticon-injury-1:before {
+    content: "\f16a";
+}
+.flaticon-massage:before {
+    content: "\f16b";
+}
+.flaticon-physical-therapy-1:before {
+    content: "\f16c";
+}
+.flaticon-chiropractic:before {
+    content: "\f16d";
+}
+.flaticon-pain:before {
+    content: "\f16e";
+}
+.flaticon-elbow:before {
+    content: "\f16f";
+}
+.flaticon-hematology:before {
+    content: "\f170";
+}
+.flaticon-hematology-1:before {
+    content: "\f171";
+}
+.flaticon-biochemistry:before {
+    content: "\f172";
+}
+.flaticon-biotech:before {
+    content: "\f173";
+}
+.flaticon-lab:before {
+    content: "\f174";
+}
+.flaticon-microscope:before {
+    content: "\f175";
+}
+.flaticon-microbiology:before {
+    content: "\f176";
+}
+.flaticon-molecular-structure:before {
+    content: "\f177";
+}
+.flaticon-molecular:before {
+    content: "\f178";
+}
+.flaticon-microscope-1:before {
+    content: "\f179";
+}
+.flaticon-biologist:before {
+    content: "\f17a";
+}
+.flaticon-virus:before {
+    content: "\f17b";
+}
+.flaticon-protection:before {
+    content: "\f17c";
+}
+.flaticon-antibody:before {
+    content: "\f17d";
+}
+.flaticon-blood-test:before {
+    content: "\f17e";
+}
+.flaticon-lab-equipment:before {
+    content: "\f17f";
+}
+.flaticon-flask:before {
+    content: "\f180";
+}
+.flaticon-laboratory:before {
+    content: "\f181";
+}
+.flaticon-experiment:before {
+    content: "\f182";
+}
+.flaticon-pediatrics:before {
+    content: "\f183";
+}
+.flaticon-pediatrics-1:before {
+    content: "\f184";
+}
+.flaticon-cardiology:before {
+    content: "\f185";
+}
+.flaticon-allergy:before {
+    content: "\f186";
+}
+.flaticon-medical-check-up:before {
+    content: "\f187";
+}
+.flaticon-pediatric-1:before {
+    content: "\f188";
+}
+.flaticon-pediatrics-2:before {
+    content: "\f189";
+}
+.flaticon-healthcare:before {
+    content: "\f18a";
+}
+.flaticon-happy-tooth:before {
+    content: "\f18b";
+}
+.flaticon-heart:before {
+    content: "\f18c";
+}
+.flaticon-cardiology-1:before {
+    content: "\f18d";
+}
+.flaticon-heart-rate:before {
+    content: "\f18e";
+}
+.flaticon-heart-rate-1:before {
+    content: "\f18f";
+}
+.flaticon-heart-rate-2:before {
+    content: "\f190";
+}
+.flaticon-heart-1:before {
+    content: "\f191";
+}
+.flaticon-cardiology-2:before {
+    content: "\f192";
+}
+.flaticon-healthcare-1:before {
+    content: "\f193";
+}
+.flaticon-monitor:before {
+    content: "\f194";
+}
+.flaticon-donor:before {
+    content: "\f195";
+}
+.flaticon-heart-problem:before {
+    content: "\f196";
+}
+.flaticon-heart-disease:before {
+    content: "\f197";
+}
+.flaticon-rehab:before {
+    content: "\f198";
+}
+.flaticon-ecg:before {
+    content: "\f199";
+}
+.flaticon-cardiogram:before {
+    content: "\f19a";
+}
+.flaticon-hepatology:before {
+    content: "\f19b";
+}
+.flaticon-hepatology-1:before {
+    content: "\f19c";
+}
+.flaticon-endoscopy:before {
+    content: "\f19d";
+}
+.flaticon-nutrition:before {
+    content: "\f19e";
+}
+.flaticon-cancer:before {
+    content: "\f19f";
+}
+.flaticon-cervical-cancer:before {
+    content: "\f1a0";
+}
+.flaticon-gastroenterology:before {
+    content: "\f1a1";
+}
+.flaticon-stomach:before {
+    content: "\f1a2";
+}
+.flaticon-stomachache:before {
+    content: "\f1a3";
+}
+.flaticon-headache:before {
+    content: "\f1a4";
+}
+.flaticon-neuro:before {
+    content: "\f1a5";
+}
+.flaticon-stressed:before {
+    content: "\f1a6";
+}
+.flaticon-repetitive:before {
+    content: "\f1a7";
+}
+.flaticon-family:before {
+    content: "\f1a8";
+}
+.flaticon-depression:before {
+    content: "\f1a9";
+}
+.flaticon-test:before {
+    content: "\f1aa";
+}
+.flaticon-mind:before {
+    content: "\f1ab";
+}
+.flaticon-research:before {
+    content: "\f1ac";
+}
+.flaticon-psychology:before {
+    content: "\f1ad";
+}
+.flaticon-mental-health:before {
+    content: "\f1ae";
+}
+.flaticon-mental-health-1:before {
+    content: "\f1af";
+}
+.flaticon-depression-1:before {
+    content: "\f1b0";
+}
+.flaticon-meditation:before {
+    content: "\f1b1";
+}
+.flaticon-pregnant:before {
+    content: "\f1b2";
+}
+.flaticon-pregnancy:before {
+    content: "\f1b3";
+}
+.flaticon-prenatal-care:before {
+    content: "\f1b4";
+}
+.flaticon-pregnant-1:before {
+    content: "\f1b5";
+}
+.flaticon-baby:before {
+    content: "\f1b6";
+}
+.flaticon-fetus:before {
+    content: "\f1b7";
+}
+.flaticon-gynecology:before {
+    content: "\f1b8";
+}
+.flaticon-prenatal-care-1:before {
+    content: "\f1b9";
+}
+.flaticon-maternity-care:before {
+    content: "\f1ba";
+}
+.flaticon-prenatal-care-2:before {
+    content: "\f1bb";
+}
+.flaticon-ultrasound:before {
+    content: "\f1bc";
+}
+.flaticon-ultrasound-1:before {
+    content: "\f1bd";
+}
+.flaticon-pregnancy-test:before {
+    content: "\f1be";
+}
+.flaticon-broken-bone-1:before {
+    content: "\f1bf";
+}
+.flaticon-fracture:before {
+    content: "\f1c0";
+}
+.flaticon-knee:before {
+    content: "\f1c1";
+}
+.flaticon-acne-treatment:before {
+    content: "\f1c2";
+}
+.flaticon-acne:before {
+    content: "\f1c3";
+}
+.flaticon-rash:before {
+    content: "\f1c4";
+}
+.flaticon-dermatology:before {
+    content: "\f1c5";
+}
+.flaticon-itching:before {
+    content: "\f1c6";
+}
+.flaticon-anti-age:before {
+    content: "\f1c7";
+}
+.flaticon-skin-cancer:before {
+    content: "\f1c8";
+}
+.flaticon-laser:before {
+    content: "\f1c9";
+}
+.flaticon-therapy:before {
+    content: "\f1ca";
+}
+.flaticon-chemical-peel:before {
+    content: "\f1cb";
+}
+.flaticon-chemical-peel-1:before {
+    content: "\f1cc";
+}
+.flaticon-anti-fungus:before {
+    content: "\f1cd";
+}
+.flaticon-skin-disease:before {
+    content: "\f1ce";
+}
+.flaticon-dry-skin:before {
+    content: "\f1cf";
+}
+.flaticon-skin:before {
+    content: "\f1d0";
+}
+.flaticon-earache:before {
+    content: "\f1d1";
+}
+.flaticon-ear:before {
+    content: "\f1d2";
+}
+.flaticon-nasal-congestion:before {
+    content: "\f1d3";
+}
+.flaticon-hearing:before {
+    content: "\f1d4";
+}
+.flaticon-hearing-test:before {
+    content: "\f1d5";
+}
+.flaticon-hearing-test-1:before {
+    content: "\f1d6";
+}
+.flaticon-ent-doctor:before {
+    content: "\f1d7";
+}
+.flaticon-nose:before {
+    content: "\f1d8";
+}
+.flaticon-orl:before {
+    content: "\f1d9";
+}
+.flaticon-stethoscope:before {
+    content: "\f1da";
+}
+.flaticon-protection-1:before {
+    content: "\f1db";
+}
+.flaticon-doctor:before {
+    content: "\f1dc";
+}
+.flaticon-healthcare-2:before {
+    content: "\f1dd";
+}
+.flaticon-medical-team:before {
+    content: "\f1de";
+}
+.flaticon-health-screening:before {
+    content: "\f1df";
+}
+.flaticon-consultation:before {
+    content: "\f1e0";
+}
+.flaticon-ambulance:before {
+    content: "\f1e1";
+}
+.flaticon-ai:before {
+    content: "\f1e2";
+}
+.flaticon-capsules:before {
+    content: "\f1e3";
+}
+.flaticon-medicine:before {
+    content: "\f1e4";
+}
+.flaticon-drug:before {
+    content: "\f1e5";
+}
+.flaticon-sugar-blood-level:before {
+    content: "\f1e6";
+}
+.flaticon-neurology-1:before {
+    content: "\f1e7";
+}
+.flaticon-radiation:before {
+    content: "\f1e8";
+}
+.flaticon-diagnostic:before {
+    content: "\f1e9";
+}
+.flaticon-medical-report:before {
+    content: "\f1ea";
+}
+.flaticon-orthopedics:before {
+    content: "\f1eb";
+}
+.flaticon-doctor-consultation:before {
+    content: "\f1ec";
+}
+.flaticon-doctor-1:before {
+    content: "\f1ed";
+}
+.flaticon-happy:before {
+    content: "\f1ee";
+}
+.flaticon-happy-face:before {
+    content: "\f1ef";
+}
+.flaticon-health-insurance:before {
+    content: "\f1f0";
+}
+.flaticon-mental-health-2:before {
+    content: "\f1f1";
+}
+.flaticon-patient:before {
+    content: "\f1f2";
+}
+.flaticon-health-data:before {
+    content: "\f1f3";
+}
+.flaticon-medical-care:before {
+    content: "\f1f4";
+}
+.flaticon-expertise:before {
+    content: "\f1f5";
+}
+.flaticon-oncology:before {
+    content: "\f1f6";
+}
+.flaticon-scanner:before {
+    content: "\f1f7";
+}
+.flaticon-cancer-cell:before {
+    content: "\f1f8";
+}
+.flaticon-observation:before {
+    content: "\f1f9";
+}
+.flaticon-cervical:before {
+    content: "\f1fa";
+}
+.flaticon-woman:before {
+    content: "\f1fb";
+}
+.flaticon-medical:before {
+    content: "\f1fc";
+}
+.flaticon-blood-cancer:before {
+    content: "\f1fd";
+}
+.flaticon-oncology-1:before {
+    content: "\f1fe";
+}
+.flaticon-breast-cancer:before {
+    content: "\f1ff";
+}
+.flaticon-breast:before {
+    content: "\f200";
+}
+

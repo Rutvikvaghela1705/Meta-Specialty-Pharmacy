@@ -1,0 +1,179 @@
+/* ==========================================================================
+   MEDNIX DERMATOLOGY - CUSTOM ENHANCEMENTS & ANIMATIONS
+   ========================================================================== */
+
+/* 1. Ensure Preloader dismisses smoothly */
+#ht-preloader {
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#ht-preloader.loaded {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none;
+}
+
+/* 2. Global Fonts & Typography */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Mona Sans', sans-serif !important;
+}
+
+/* 3. Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 4. On-Scroll Reveal Animations */
+.mednix-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.mednix-reveal.mednix-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.mednix-reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mednix-reveal-left.mednix-visible {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+.mednix-reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mednix-reveal-right.mednix-visible {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+/* 5. Sticky Header styling */
+header#masthead.is-sticky #header-sticky {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: rgba(7, 17, 47, 0.95) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  animation: mednixSlideDown 0.35s ease-out;
+}
+
+@keyframes mednixSlideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* 6. Card hover transitions */
+.service-item, .team-member, .blog-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease !important;
+}
+
+.service-item:hover, .team-member:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 15px 35px rgba(249, 177, 1, 0.15) !important;
+}
+
+/* 7. Image hover zoom */
+.team-member img, .service-item img {
+  transition: transform 0.5s ease !important;
+}
+
+.team-member:hover img, .service-item:hover img {
+  transform: scale(1.04) !important;
+}
+
+/* 8. Interactive Toast Notifications */
+.mednix-toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #07112F;
+  border-left: 4px solid #f9b101;
+  color: #ffffff;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 100000;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mednix-toast.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* 9. Scroll to top button */
+.hfe-scroll-to-top-wrap {
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* 10. Meta Specialty Pharmacy Brand Styling */
+:root {
+  --themeht-primary-color: #0066cc !important;
+}
+
+/* Primary Button - Meta Brand Blue with Cyan and White accents */
+.themeht-btn.primary-btn {
+  background: linear-gradient(135deg, #0056b3 0%, #0077e6 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 20px rgba(0, 102, 204, 0.35);
+  border: none;
+  transition: all 0.35s ease;
+}
+
+.themeht-btn.primary-btn:hover {
+  background: linear-gradient(135deg, #004494 0%, #0062d2 100%) !important;
+  box-shadow: 0 8px 25px rgba(0, 102, 204, 0.5);
+  transform: translateY(-2px);
+}
+
+.themeht-btn.primary-btn .btn-icon {
+  background-color: #ffffff !important;
+  color: #0066cc !important;
+}
+
+.themeht-btn.primary-btn .btn-icon:before {
+  background-color: #07152b !important;
+}
+
+.themeht-btn.primary-btn:hover .btn-icon {
+  color: #ffffff !important;
+}
+
+/* Hero Badge Tag matching logo warm gold */
+.slider-headline h6 span {
+  background: #f9b101 !important;
+  color: #07152b !important;
+}
+
+/* Hero slider overlay in logo midnight blue */
+.slider-overlay {
+  background:
+    linear-gradient(274deg, rgba(7, 21, 43, 0) 38%, rgba(7, 21, 43, 0.72) 68%, #07152b 100%),
+    linear-gradient(1deg, rgba(7, 21, 43, 0) 55%, rgba(7, 21, 43, 0.35) 83%, rgba(7, 21, 43, 0.95) 100%),
+    linear-gradient(rgba(7, 21, 43, 0) 47%, rgba(7, 21, 43, 0.35)) !important;
+}
+
