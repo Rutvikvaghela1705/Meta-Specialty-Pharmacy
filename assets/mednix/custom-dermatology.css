@@ -1035,3 +1035,41 @@ button.themeht-btn:hover .btn-icon i:last-child {
   background-color: #f9b101 !important;
   color: #07152b !important;
 }
+
+/* 13. Figma Export & SVG Vector Icons System */
+i.has-svg,
+.has-svg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+i.has-svg::before,
+i.has-svg::after,
+.has-svg::before,
+.has-svg::after,
+i:has(svg)::before,
+i:has(svg)::after {
+  content: none !important;
+  display: none !important;
+}
+
+i.has-svg > svg,
+i > svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  flex-shrink: 0;
+  vertical-align: -0.125em;
+  pointer-events: none;
+}
+
+.themeht-btn .btn-icon i.has-svg {
+  display: inline-block !important;
+}
+
+.themeht-btn .btn-icon i.has-svg > svg {
+  vertical-align: middle;
+}

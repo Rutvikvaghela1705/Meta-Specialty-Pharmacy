@@ -770,6 +770,35 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" />
   <link rel="stylesheet" href="assets/mednix/custom-dermatology.css" />
+  <style id="figma-svg-icons-css">
+    /* Figma Extension & SVG Vector Support */
+    i.has-svg, .has-svg {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+    }
+    i.has-svg::before, i.has-svg::after,
+    .has-svg::before, .has-svg::after,
+    i:has(svg)::before, i:has(svg)::after {
+      content: none !important;
+      display: none !important;
+    }
+    i.has-svg > svg, i > svg {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      fill: currentColor;
+      flex-shrink: 0;
+      vertical-align: -0.125em;
+    }
+    .themeht-btn .btn-icon i.has-svg {
+      display: inline-block !important;
+    }
+    .themeht-btn .btn-icon i.has-svg > svg {
+      vertical-align: middle;
+    }
+  </style>
 </head>
 
 <body
@@ -1091,7 +1120,9 @@
                   </div>
                 </div>
                 <button id="menu-toggle" class="nav-menu-toggle ht-toggler" type="button">
-                  <i class="bi bi-list"></i>
+                  <i class="bi bi-list has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+</svg></i>
                 </button>
               </div>
             </div>
@@ -1101,7 +1132,9 @@
               data-widget_type="header-sidenav-toggle.default">
               <div class="elementor-widget-container">
                 <a href="#" class="ht-nav-toggle">
-                  <i aria-hidden="true" class="bi bi-x-diamond"></i>
+                  <i aria-hidden="true" class="bi bi-x-diamond has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-x-diamond" viewBox="0 0 16 16">
+  <path d="M7.987 16a1.53 1.53 0 0 1-1.07-.448L.45 9.082a1.53 1.53 0 0 1 0-2.165L6.917.45a1.53 1.53 0 0 1 2.166 0l6.469 6.468A1.53 1.53 0 0 1 16 8.013a1.53 1.53 0 0 1-.448 1.07l-6.47 6.469A1.53 1.53 0 0 1 7.988 16zM7.639 1.17 4.766 4.044 8 7.278l3.234-3.234L8.361 1.17a.51.51 0 0 0-.722 0M8.722 8l3.234 3.234 2.873-2.873c.2-.2.2-.523 0-.722l-2.873-2.873zM8 8.722l-3.234 3.234 2.873 2.873c.2.2.523.2.722 0l2.873-2.873zM7.278 8 4.044 4.766 1.17 7.639a.51.51 0 0 0 0 .722l2.874 2.873z"/>
+</svg></i>
                 </a>
               </div>
             </div>
@@ -1150,8 +1183,8 @@
                 <div class="">
                   <a class="themeht-btn primary-btn" href="#">
                     <span class="btn-icon">
-                      <i class="flaticon flaticon-right-arrow-1"></i>
-                      <i class="flaticon flaticon-right-arrow-1"></i>
+                      <i class="flaticon flaticon-right-arrow-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="21 18 265 265" width="1em" height="1em" fill="currentColor"><path d="M266 138L253 138Q238 138 224.50 129.50Q211 121 203 107.50Q195 94 195 79L195 67L170 67L170 79Q170 96 176.50 111Q183 126 195 138L41 138L41 163L195 163Q183 174 176.50 189Q170 204 170 221L170 233L195 233L195 221Q195 206 203 192.50Q211 179 224.50 171Q238 163 253 163L266 163"/></svg></i>
+                      <i class="flaticon flaticon-right-arrow-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="21 18 265 265" width="1em" height="1em" fill="currentColor"><path d="M266 138L253 138Q238 138 224.50 129.50Q211 121 203 107.50Q195 94 195 79L195 67L170 67L170 79Q170 96 176.50 111Q183 126 195 138L41 138L41 163L195 163Q183 174 176.50 189Q170 204 170 221L170 233L195 233L195 221Q195 206 203 192.50Q211 179 224.50 171Q238 163 253 163L266 163"/></svg></i>
                     </span>
                     <span class="btn-text">Contact Us</span>
                   </a>
@@ -1164,7 +1197,9 @@
               data-widget_type="header-sidenav-toggle.default">
               <div class="elementor-widget-container">
                 <a href="#" class="ht-nav-toggle">
-                  <i aria-hidden="true" class="bi bi-x-diamond"></i>
+                  <i aria-hidden="true" class="bi bi-x-diamond has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-x-diamond" viewBox="0 0 16 16">
+  <path d="M7.987 16a1.53 1.53 0 0 1-1.07-.448L.45 9.082a1.53 1.53 0 0 1 0-2.165L6.917.45a1.53 1.53 0 0 1 2.166 0l6.469 6.468A1.53 1.53 0 0 1 16 8.013a1.53 1.53 0 0 1-.448 1.07l-6.47 6.469A1.53 1.53 0 0 1 7.988 16zM7.639 1.17 4.766 4.044 8 7.278l3.234-3.234L8.361 1.17a.51.51 0 0 0-.722 0M8.722 8l3.234 3.234 2.873-2.873c.2-.2.2-.523 0-.722l-2.873-2.873zM8 8.722l-3.234 3.234 2.873 2.873c.2.2.523.2.722 0l2.873-2.873zM7.278 8 4.044 4.766 1.17 7.639a.51.51 0 0 0 0 .722l2.874 2.873z"/>
+</svg></i>
                 </a>
               </div>
             </div>
@@ -1236,8 +1271,7 @@
 
                               <div class="banner-btn animate-fade-up delay-1500">
                                 <a class="themeht-btn primary-btn" href="#">
-                                  <span class="btn-icon"><i class="flaticon-right-arrow-1"></i><i
-                                      class="flaticon-right-arrow-1"></i></span>
+                                  <span class="btn-icon"><i class="flaticon-right-arrow-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="21 18 265 265" width="1em" height="1em" fill="currentColor"><path d="M266 138L253 138Q238 138 224.50 129.50Q211 121 203 107.50Q195 94 195 79L195 67L170 67L170 79Q170 96 176.50 111Q183 126 195 138L41 138L41 163L195 163Q183 174 176.50 189Q170 204 170 221L170 233L195 233L195 221Q195 206 203 192.50Q211 179 224.50 171Q238 163 253 163L266 163"/></svg></i><i class="flaticon-right-arrow-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="21 18 265 265" width="1em" height="1em" fill="currentColor"><path d="M266 138L253 138Q238 138 224.50 129.50Q211 121 203 107.50Q195 94 195 79L195 67L170 67L170 79Q170 96 176.50 111Q183 126 195 138L41 138L41 163L195 163Q183 174 176.50 189Q170 204 170 221L170 233L195 233L195 221Q195 206 203 192.50Q211 179 224.50 171Q238 163 253 163L266 163"/></svg></i></span>
                                   <span class="btn-text">Book Free Consultation</span>
                                 </a>
                               </div>
@@ -1292,8 +1326,7 @@
 
                               <div class="banner-btn animate-fade-up delay-1500">
                                 <a class="themeht-btn primary-btn" href="#">
-                                  <span class="btn-icon"><i class="flaticon-right-arrow-1"></i><i
-                                      class="flaticon-right-arrow-1"></i></span>
+                                  <span class="btn-icon"><i class="flaticon-right-arrow-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="21 18 265 265" width="1em" height="1em" fill="currentColor"><path d="M266 138L253 138Q238 138 224.50 129.50Q211 121 203 107.50Q195 94 195 79L195 67L170 67L170 79Q170 96 176.50 111Q183 126 195 138L41 138L41 163L195 163Q183 174 176.50 189Q170 204 170 221L170 233L195 233L195 221Q195 206 203 192.50Q211 179 224.50 171Q238 163 253 163L266 163"/></svg></i><i class="flaticon-right-arrow-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="21 18 265 265" width="1em" height="1em" fill="currentColor"><path d="M266 138L253 138Q238 138 224.50 129.50Q211 121 203 107.50Q195 94 195 79L195 67L170 67L170 79Q170 96 176.50 111Q183 126 195 138L41 138L41 163L195 163Q183 174 176.50 189Q170 204 170 221L170 233L195 233L195 221Q195 206 203 192.50Q211 179 224.50 171Q238 163 253 163L266 163"/></svg></i></span>
                                   <span class="btn-text">Get Free Delivery</span>
                                 </a>
                               </div>
@@ -1348,8 +1381,7 @@
 
                               <div class="banner-btn animate-fade-up delay-1500">
                                 <a class="themeht-btn primary-btn" href="#patient-consultation">
-                                  <span class="btn-icon"><i class="flaticon-right-arrow-1"></i><i
-                                      class="flaticon-right-arrow-1"></i></span>
+                                  <span class="btn-icon"><i class="flaticon-right-arrow-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="21 18 265 265" width="1em" height="1em" fill="currentColor"><path d="M266 138L253 138Q238 138 224.50 129.50Q211 121 203 107.50Q195 94 195 79L195 67L170 67L170 79Q170 96 176.50 111Q183 126 195 138L41 138L41 163L195 163Q183 174 176.50 189Q170 204 170 221L170 233L195 233L195 221Q195 206 203 192.50Q211 179 224.50 171Q238 163 253 163L266 163"/></svg></i><i class="flaticon-right-arrow-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="21 18 265 265" width="1em" height="1em" fill="currentColor"><path d="M266 138L253 138Q238 138 224.50 129.50Q211 121 203 107.50Q195 94 195 79L195 67L170 67L170 79Q170 96 176.50 111Q183 126 195 138L41 138L41 163L195 163Q183 174 176.50 189Q170 204 170 221L170 233L195 233L195 221Q195 206 203 192.50Q211 179 224.50 171Q238 163 253 163L266 163"/></svg></i></span>
                                   <span class="btn-text">Get Assistance</span>
                                 </a>
                               </div>
@@ -1415,7 +1447,7 @@
 
                               <div class="service-desc">
                                 <div class="service-icon">
-                                  <i aria-hidden="true" class="fa-solid fa-cannabis"></i>
+                                  <i aria-hidden="true" class="fa-solid fa-cannabis has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" width="1em" height="1em" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0c5.3 0 10.3 2.7 13.3 7.1c15.8 23.5 36.7 63.7 49.2 109c7.2 26.4 11.8 55.2 10.4 84c11.5-8.8 23.7-16.7 35.8-23.6c41-23.3 84.4-36.9 112.2-42.5c5.2-1 10.7 .6 14.4 4.4s5.4 9.2 4.4 14.5c-5.6 27.7-19.3 70.9-42.7 111.7c-9.1 15.9-19.9 31.7-32.4 46.3c27.8 6.6 52.4 17.3 67.2 25.5c5.1 2.8 8.2 8.2 8.2 14s-3.2 11.2-8.2 14c-15.2 8.4-40.9 19.5-69.8 26.1c-20.2 4.6-42.9 7.2-65.2 4.6l8.3 33.1c1.5 6.1-.6 12.4-5.5 16.4s-11.6 4.6-17.2 1.9L280 417.2l0 70.8c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-70.8-58.5 29.1c-5.6 2.8-12.3 2.1-17.2-1.9s-7-10.3-5.5-16.4l8.3-33.1c-22.2 2.6-45 0-65.2-4.6c-28.9-6.6-54.6-17.6-69.8-26.1c-5.1-2.8-8.2-8.2-8.2-14s3.2-11.2 8.2-14c14.8-8.2 39.4-18.8 67.2-25.5C78.9 296.3 68.1 280.5 59 264.6c-23.4-40.8-37.1-84-42.7-111.7c-1.1-5.2 .6-10.7 4.4-14.5s9.2-5.4 14.4-4.4c27.9 5.5 71.2 19.2 112.2 42.5c12.1 6.9 24.3 14.7 35.8 23.6c-1.4-28.7 3.1-57.6 10.4-84c12.5-45.3 33.4-85.5 49.2-109c3-4.4 8-7.1 13.3-7.1z"/></svg></i>
                                 </div>
 
                                 <div class="service-title">
@@ -1444,7 +1476,7 @@
 
                               <div class="service-desc">
                                 <div class="service-icon">
-                                  <i aria-hidden="true" class="fa-solid fa-truck-fast"></i>
+                                  <i aria-hidden="true" class="fa-solid fa-truck-fast has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" width="1em" height="1em" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M112 0C85.5 0 64 21.5 64 48l0 48L16 96c-8.8 0-16 7.2-16 16s7.2 16 16 16l48 0 208 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L64 160l-16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l16 0 176 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L64 224l-48 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l48 0 144 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L64 288l0 128c0 53 43 96 96 96s96-43 96-96l128 0c0 53 43 96 96 96s96-43 96-96l32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64 0-32 0-18.7c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7L416 96l0-48c0-26.5-21.5-48-48-48L112 0zM544 237.3l0 18.7-128 0 0-96 50.7 0L544 237.3zM160 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm272 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0z"/></svg></i>
                                 </div>
 
                                 <div class="service-title">
@@ -1473,7 +1505,7 @@
 
                               <div class="service-desc">
                                 <div class="service-icon">
-                                  <i aria-hidden="true" class="fa-solid fa-gift"></i>
+                                  <i aria-hidden="true" class="fa-solid fa-gift has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" width="1em" height="1em" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M190.5 68.8L225.3 128l-1.3 0-72 0c-22.1 0-40-17.9-40-40s17.9-40 40-40l2.2 0c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40L32 128c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l448 0c17.7 0 32-14.3 32-32l0-64c0-17.7-14.3-32-32-32l-41.6 0c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88l-2.2 0c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0L152 0C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40l-72 0-1.3 0 34.8-59.2C329.1 55.9 342.9 48 357.8 48l2.2 0c22.1 0 40 17.9 40 40zM32 288l0 176c0 26.5 21.5 48 48 48l144 0 0-224L32 288zM288 512l144 0c26.5 0 48-21.5 48-48l0-176-192 0 0 224z"/></svg></i>
                                 </div>
 
                                 <div class="service-title">
@@ -1502,7 +1534,7 @@
 
                               <div class="service-desc">
                                 <div class="service-icon">
-                                  <i aria-hidden="true" class="fa-solid fa-syringe"></i>
+                                  <i aria-hidden="true" class="fa-solid fa-syringe has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" width="1em" height="1em" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M441 7l32 32 32 32c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-15-15L417.9 128l55 55c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-72-72L295 73c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l55 55L422.1 56 407 41c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0zM210.3 155.7l61.1-61.1c.3 .3 .6 .7 1 1l16 16 56 56 56 56 16 16c.3 .3 .6 .6 1 1l-191 191c-10.5 10.5-24.7 16.4-39.6 16.4l-88.8 0L41 505c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l57-57 0-88.8c0-14.9 5.9-29.1 16.4-39.6l43.3-43.3 57 57c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-57-57 41.4-41.4 57 57c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-57-57z"/></svg></i>
                                 </div>
 
                                 <div class="service-title">
@@ -1531,7 +1563,7 @@
 
                               <div class="service-desc">
                                 <div class="service-icon">
-                                  <i aria-hidden="true" class="fa-solid fa-credit-card"></i>
+                                  <i aria-hidden="true" class="fa-solid fa-credit-card has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" width="1em" height="1em" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M64 32C28.7 32 0 60.7 0 96l0 32 576 0 0-32c0-35.3-28.7-64-64-64L64 32zM576 224L0 224 0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-192zM112 352l64 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm112 16c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16z"/></svg></i>
                                 </div>
 
                                 <div class="service-title">
@@ -1560,7 +1592,7 @@
 
                               <div class="service-desc">
                                 <div class="service-icon">
-                                  <i aria-hidden="true" class="fa-solid fa-user-doctor"></i>
+                                  <i aria-hidden="true" class="fa-solid fa-user-doctor has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" width="1em" height="1em" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-96 55.2C54 332.9 0 401.3 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7c0-81-54-149.4-128-171.1l0 50.8c27.6 7.1 48 32.2 48 62l0 40c0 8.8-7.2 16-16 16l-16 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l0-24c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 24c8.8 0 16 7.2 16 16s-7.2 16-16 16l-16 0c-8.8 0-16-7.2-16-16l0-40c0-29.8 20.4-54.9 48-62l0-57.1c-6-.6-12.1-.9-18.3-.9l-91.4 0c-6.2 0-12.3 .3-18.3 .9l0 65.4c23.1 6.9 40 28.3 40 53.7c0 30.9-25.1 56-56 56s-56-25.1-56-56c0-25.4 16.9-46.8 40-53.7l0-59.1zM144 448a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></i>
                                 </div>
 
                                 <div class="service-title">
@@ -1590,7 +1622,7 @@
 
                               <div class="service-desc">
                                 <div class="service-icon">
-                                  <i aria-hidden="true" class="fa-solid fa-shield-halved"></i>
+                                  <i aria-hidden="true" class="fa-solid fa-shield-halved has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" width="1em" height="1em" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0zm0 66.8l0 378.1C394 378 431.1 230.1 432 141.4L256 66.8s0 0 0 0z"/></svg></i>
                                 </div>
 
                                 <div class="service-title">
@@ -1650,19 +1682,19 @@
 
                       <ul class="list-unstyled list-icon style-1">
                         <li>
-                          <i class="flaticon flaticon-check-mark-1"></i>
+                          <i class="flaticon flaticon-check-mark-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 303 303" width="1em" height="1em" fill="currentColor"><path d="M46 139Q38 139 31.50 143Q25 147 21.50 154.50Q18 162 19 169.50Q20 177 25 184L94 269Q102 279 115 278Q128 277 136 266L281 33Q282 31 281.50 28.50Q281 26 278.50 24Q276 22 273 22Q270 22 268 25L122 190Q120 192 117.50 192Q115 192 113 190L64 146Q56 139 46 139"/></svg></i>
                           Personalized pharmacy care designed around your unique health needs
                         </li>
                         <li>
-                          <i class="flaticon flaticon-check-mark-1"></i>
+                          <i class="flaticon flaticon-check-mark-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 303 303" width="1em" height="1em" fill="currentColor"><path d="M46 139Q38 139 31.50 143Q25 147 21.50 154.50Q18 162 19 169.50Q20 177 25 184L94 269Q102 279 115 278Q128 277 136 266L281 33Q282 31 281.50 28.50Q281 26 278.50 24Q276 22 273 22Q270 22 268 25L122 190Q120 192 117.50 192Q115 192 113 190L64 146Q56 139 46 139"/></svg></i>
                           Specialty and hard-to-find medications with trusted expert support
                         </li>
                         <li>
-                          <i class="flaticon flaticon-check-mark-1"></i>
+                          <i class="flaticon flaticon-check-mark-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 303 303" width="1em" height="1em" fill="currentColor"><path d="M46 139Q38 139 31.50 143Q25 147 21.50 154.50Q18 162 19 169.50Q20 177 25 184L94 269Q102 279 115 278Q128 277 136 266L281 33Q282 31 281.50 28.50Q281 26 278.50 24Q276 22 273 22Q270 22 268 25L122 190Q120 192 117.50 192Q115 192 113 190L64 146Q56 139 46 139"/></svg></i>
                           Convenient services including free home delivery and patient consultations
                         </li>
                         <li>
-                          <i class="flaticon flaticon-check-mark-1"></i>
+                          <i class="flaticon flaticon-check-mark-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 303 303" width="1em" height="1em" fill="currentColor"><path d="M46 139Q38 139 31.50 143Q25 147 21.50 154.50Q18 162 19 169.50Q20 177 25 184L94 269Q102 279 115 278Q128 277 136 266L281 33Q282 31 281.50 28.50Q281 26 278.50 24Q276 22 273 22Q270 22 268 25L122 190Q120 192 117.50 192Q115 192 113 190L64 146Q56 139 46 139"/></svg></i>
                           A caring team committed to your health, comfort, and wellness
                         </li>
                       </ul>
@@ -1757,8 +1789,8 @@
                         <div class="">
                           <a class="themeht-btn primary-btn" href="#">
                             <span class="btn-icon">
-                              <i class="flaticon flaticon-right-arrow-1"></i>
-                              <i class="flaticon flaticon-right-arrow-1"></i>
+                              <i class="flaticon flaticon-right-arrow-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="21 18 265 265" width="1em" height="1em" fill="currentColor"><path d="M266 138L253 138Q238 138 224.50 129.50Q211 121 203 107.50Q195 94 195 79L195 67L170 67L170 79Q170 96 176.50 111Q183 126 195 138L41 138L41 163L195 163Q183 174 176.50 189Q170 204 170 221L170 233L195 233L195 221Q195 206 203 192.50Q211 179 224.50 171Q238 163 253 163L266 163"/></svg></i>
+                              <i class="flaticon flaticon-right-arrow-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="21 18 265 265" width="1em" height="1em" fill="currentColor"><path d="M266 138L253 138Q238 138 224.50 129.50Q211 121 203 107.50Q195 94 195 79L195 67L170 67L170 79Q170 96 176.50 111Q183 126 195 138L41 138L41 163L195 163Q183 174 176.50 189Q170 204 170 221L170 233L195 233L195 221Q195 206 203 192.50Q211 179 224.50 171Q238 163 253 163L266 163"/></svg></i>
                             </span>
                             <span class="btn-text">Discover Our Services</span>
                           </a>
@@ -1774,7 +1806,7 @@
                       <div class="elementor-widget-container">
                         <div class="featured-item style-4 text-white">
                           <div class="featured-icon">
-                            <i class="fa-solid fa-prescription-bottle-medical"></i>
+                            <i class="fa-solid fa-prescription-bottle-medical has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" width="1em" height="1em" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M0 32C0 14.3 14.3 0 32 0L352 0c17.7 0 32 14.3 32 32l0 32c0 17.7-14.3 32-32 32L32 96C14.3 96 0 81.7 0 64L0 32zm32 96l320 0 0 320c0 35.3-28.7 64-64 64L96 512c-35.3 0-64-28.7-64-64l0-320zM160 240l0 48-48 0c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l48 0 0 48c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-48 48 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-48 0 0-48c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z"/></svg></i>
                           </div>
                           <div class="featured-desc">
                             <div class="featured-title">
@@ -1793,7 +1825,7 @@
                       <div class="elementor-widget-container">
                         <div class="featured-item style-4 text-white">
                           <div class="featured-icon">
-                            <i class="fa-solid fa-hand-holding-medical"></i>
+                            <i class="fa-solid fa-hand-holding-medical has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" width="1em" height="1em" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M224 24l0 56-56 0c-13.3 0-24 10.7-24 24l0 48c0 13.3 10.7 24 24 24l56 0 0 56c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-56 56 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24l-56 0 0-56c0-13.3-10.7-24-24-24L248 0c-13.3 0-24 10.7-24 24zM559.7 392.2c17.8-13.1 21.6-38.1 8.5-55.9s-38.1-21.6-55.9-8.5L392.6 416 272 416c-8.8 0-16-7.2-16-16s7.2-16 16-16l16 0 64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0-16 0-78.3 0c-29.1 0-57.3 9.9-80 28L68.8 384 32 384c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l160 0 160.5 0c29 0 57.3-9.3 80.7-26.5l126.6-93.3zm-367-8.2l.9 0c0 0 0 0 0 0c-.3 0-.6 0-.9 0z"/></svg></i>
                           </div>
                           <div class="featured-desc">
                             <div class="featured-title">
@@ -1812,7 +1844,7 @@
                       <div class="elementor-widget-container">
                         <div class="featured-item style-4 text-white">
                           <div class="featured-icon">
-                            <i class="fa-solid fa-truck-fast"></i>
+                            <i class="fa-solid fa-truck-fast has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" width="1em" height="1em" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M112 0C85.5 0 64 21.5 64 48l0 48L16 96c-8.8 0-16 7.2-16 16s7.2 16 16 16l48 0 208 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L64 160l-16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l16 0 176 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L64 224l-48 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l48 0 144 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L64 288l0 128c0 53 43 96 96 96s96-43 96-96l128 0c0 53 43 96 96 96s96-43 96-96l32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64 0-32 0-18.7c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7L416 96l0-48c0-26.5-21.5-48-48-48L112 0zM544 237.3l0 18.7-128 0 0-96 50.7 0L544 237.3zM160 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm272 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0z"/></svg></i>
                           </div>
                           <div class="featured-desc">
                             <div class="featured-title">
@@ -1904,68 +1936,68 @@
                       <div class="marquee-content">
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <!-- Duplicate the list for seamless looping -->
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                       </div>
                     </div>
@@ -2031,7 +2063,7 @@
                       <div class="elementor-icon-box-wrapper">
                         <div class="elementor-icon-box-icon">
                           <span class="elementor-icon">
-                            <i aria-hidden="true" class="flaticon flaticon-email-2"></i>
+                            <i aria-hidden="true" class="flaticon flaticon-email-2 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 341 341" width="1em" height="1em" fill="currentColor"><path d="M156 170Q139 170 123 165Q110 160 101.50 150Q93 140 90 126.50Q87 113 92 99.50Q97 86 109 74L114 70Q126 59 141.50 56Q157 53 172 57.50Q187 62 196 74Q205 86 206 102Q207 120 195 134Q191 140 184 142.50Q177 145 170.50 143.50Q164 142 161 137Q158 132 160 126Q165 109 169 85Q169 82 172 81Q175 80 177 81.50Q179 83 179 86Q174 112 170 129Q169 130 170 131.50Q171 133 173 134Q177 134 181 132.50Q185 131 188 128Q197 117 196.50 103.50Q196 90 188.50 80Q181 70 168.50 66.50Q156 63 143.50 66Q131 69 120 77L116 81Q108 89 103 98Q97 112 100 125Q102 135 109 143.50Q116 152 126 155Q147 162 166 159Q189 157 201 142Q202 140 204 140Q206 140 208 141Q210 142 210 144Q210 146 209 148Q200 159 186 164.50Q172 170 156 170M139 144Q131 144 124.50 139Q118 134 116.50 125.50Q115 117 117 109Q119 104 121 100Q127 89 138 82Q145 79 152.50 80Q160 81 165.50 87Q171 93 174 101Q175 103 174 104.50Q173 106 171 107Q169 108 167 107Q165 106 164 104Q163 98 159.50 94.50Q156 91 151.50 90Q147 89 143 91Q134 96 130 105Q128 108 126.50 112.50Q125 117 126 122.50Q127 128 131 131.50Q135 135 141.50 134Q148 133 152 129Q158 124 163 116Q164 114 167 114Q170 114 171.50 116.50Q173 119 171 122Q166 130 158 137Q150 144 139 144M285 300L15 300Q9 300 4.50 295.50Q0 291 0 285L0 100Q0 97 3 95.50Q6 94 8 96L131 198Q139 205 150 205Q161 205 169 198L292 96Q294 94 297 95.50Q300 97 300 100L300 285Q300 291 295.50 295.50Q291 300 285 300M124 206L10 111L10 285Q10 287 11.50 288.50Q13 290 15 290L285 290Q287 290 288.50 288.50Q290 287 290 285L290 111L176 206Q164 215 150 215Q136 215 124 206M5 105Q1 105 0 101.50Q-1 98 2 96L47 64Q49 63 51 63.50Q53 64 54 65.50Q55 67 55 69Q55 71 53 72L8 104Q7 105 5 105M295 105Q293 105 292 104L247 72Q245 71 245 69Q245 67 246 65.50Q247 64 249 63.50Q251 63 253 64L298 96Q301 98 300 101.50Q299 105 295 105M196 35Q195 35 193 34L169 17Q161 10 150 10Q139 10 131 17L107 34Q104 36 101.50 34.50Q99 33 99 30.50Q99 28 101 26L125 9Q136 0 150 0Q164 0 175 9L199 26Q202 28 201 31.50Q200 35 196 35M8 297Q5 297 3.50 294Q2 291 5 288L119 194Q121 192 124 193Q127 194 127.50 197Q128 200 126 201L11 296Q10 297 8 297M292 297Q290 297 289 296L174 201Q172 200 172.50 197Q173 194 176 193Q179 192 181 194L295 288Q298 291 296.50 294Q295 297 292 297M250 142Q248 142 246.50 140.50Q245 139 245 137L245 35L55 35L55 137Q55 139 53.50 140.50Q52 142 50 142Q48 142 46.50 140.50Q45 139 45 137L45 35Q45 31 48 28Q51 25 56 25L244 25Q249 25 252 28Q255 31 255 35L255 137Q255 139 253.50 140.50Q252 142 250 142"/></svg></i>
                           </span>
                         </div>
 
@@ -2055,7 +2087,7 @@
                       <div class="elementor-icon-box-wrapper">
                         <div class="elementor-icon-box-icon">
                           <span class="elementor-icon">
-                            <i aria-hidden="true" class="flaticon flaticon-phone-call-2"></i>
+                            <i aria-hidden="true" class="flaticon flaticon-phone-call-2 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 340 340" width="1em" height="1em" fill="currentColor"><path d="M179 105Q191 108 197.50 118.50Q204 129 200 141Q198 148 202 154.50Q206 161 213 163Q215 163 217 163Q223 163 228 159.50Q233 156 234 150Q239 133 234.50 116.50Q230 100 217.50 87.50Q205 75 188 71Q181 69 175 72.50Q169 76 167 83Q165 90 168.50 96.50Q172 103 179 105M178 86Q179 84 180.50 83Q182 82 184 82L185 82Q207 88 218 107Q229 126 223 147Q222 150 220 151Q218 152 215.50 151.50Q213 151 212 149Q211 147 212 144Q216 128 207.50 113Q199 98 182 93Q180 93 178.50 90.50Q177 88 178 86M201 25Q194 23 187.50 26.50Q181 30 179 37Q177 44 180.50 50.50Q184 57 191 59Q212 64 226.50 79Q241 94 246.50 113.50Q252 133 246 154Q244 161 248 167Q252 173 259 175Q261 176 263 176Q269 176 274 172.50Q279 169 280 163Q288 133 280 104Q272 75 251 54Q230 33 201 25M269 160Q268 162 266 163.50Q264 165 261.50 164Q259 163 258 161Q257 159 258 157Q264 133 257.50 110Q251 87 234.50 70.50Q218 54 195 47Q192 47 191 45Q190 43 191 39.50Q192 36 196 36L198 36Q224 43 243 62Q262 81 269 107Q276 133 269 160M243 244L220 204Q214 194 202.50 191Q191 188 181 194L158 208Q156 209 154 208.50Q152 208 151 206L97 113Q96 111 96.50 109Q97 107 99 106L123 93Q133 87 136 75.50Q139 64 133 54L110 14Q104 4 93 1Q82-2 72 4L63 8Q41 21 28.50 43Q16 65 16 90.50Q16 116 29 138L48 173Q50 175 52 175.50Q54 176 56 175Q58 174 59 171.50Q60 169 58 167L39 133Q25 108 28.50 81Q32 54 50 34L89 100Q86 103 85 106Q84 113 87 119L141 212Q144 218 151 220Q154 221 158 220L196 286Q176 291 155 285Q139 281 126 271Q113 261 105 247L85 212Q84 210 81.50 209.50Q79 209 77 210Q75 211 74 213.50Q73 216 75 218L94 252Q104 269 119 280.50Q134 292 152 297Q164 300 177 300Q202 300 224 287L232 283Q243 277 246 265.50Q249 254 243 244M69 19L77 14Q83 11 89.50 12.50Q96 14 100 20L123 60Q126 66 124.50 72.50Q123 79 117 82L98 93L59 26Q64 22 69 19M234 262Q233 269 227 272L218 277Q213 280 207 282L168 215L187 204Q193 201 199.50 202.50Q206 204 210 210L233 250Q236 256 234 262M67 187Q64 187 62.50 188.50Q61 190 61 192.50Q61 195 62.50 196.50Q64 198 66.50 198Q69 198 70.50 196.50Q72 195 72 192.50Q72 190 70.50 188.50Q69 187 67 187"/></svg></i>
                           </span>
                         </div>
 
@@ -2192,8 +2224,8 @@
                                 <div class="col-md-12 mt-4">
                                   <button type="submit" class="themeht-btn primary-btn wpcf7-submit">
                                     <span class="btn-icon">
-                                      <i class="flaticon flaticon-right-arrow-1"></i>
-                                      <i class="flaticon flaticon-right-arrow-1"></i>
+                                      <i class="flaticon flaticon-right-arrow-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="21 18 265 265" width="1em" height="1em" fill="currentColor"><path d="M266 138L253 138Q238 138 224.50 129.50Q211 121 203 107.50Q195 94 195 79L195 67L170 67L170 79Q170 96 176.50 111Q183 126 195 138L41 138L41 163L195 163Q183 174 176.50 189Q170 204 170 221L170 233L195 233L195 221Q195 206 203 192.50Q211 179 224.50 171Q238 163 253 163L266 163"/></svg></i>
+                                      <i class="flaticon flaticon-right-arrow-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="21 18 265 265" width="1em" height="1em" fill="currentColor"><path d="M266 138L253 138Q238 138 224.50 129.50Q211 121 203 107.50Q195 94 195 79L195 67L170 67L170 79Q170 96 176.50 111Q183 126 195 138L41 138L41 163L195 163Q183 174 176.50 189Q170 204 170 221L170 233L195 233L195 221Q195 206 203 192.50Q211 179 224.50 171Q238 163 253 163L266 163"/></svg></i>
                                     </span>
                                     <span class="btn-text">Schedule Consultation</span>
                                   </button>
@@ -2256,9 +2288,17 @@
                               pharmacy had me waiting for weeks. The care and urgency they showed was truly remarkable."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2280,9 +2320,17 @@
                               packaged. Their delivery staff is polite, punctual, and reliable every single time."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2304,9 +2352,17 @@
                               that reduced my monthly cost to almost zero. Truly life-changing support!"
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2328,9 +2384,17 @@
                               rushed. Their personalized guidance gives me complete peace of mind."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2352,9 +2416,17 @@
                               delivered all my recovery medications straight to my door without hassle."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2376,9 +2448,17 @@
                               reminders and caring team make them the best pharmacy in New York."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2400,9 +2480,17 @@
                               pharmacy had me waiting for weeks. The care and urgency they showed was truly remarkable."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2424,9 +2512,17 @@
                               packaged. Their delivery staff is polite, punctual, and reliable every single time."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2448,9 +2544,17 @@
                               that reduced my monthly cost to almost zero. Truly life-changing support!"
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2472,9 +2576,17 @@
                               rushed. Their personalized guidance gives me complete peace of mind."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2496,9 +2608,17 @@
                               delivered all my recovery medications straight to my door without hassle."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2520,9 +2640,17 @@
                               reminders and caring team make them the best pharmacy in New York."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2555,9 +2683,17 @@
                               rushed. Their personalized guidance gives me complete peace of mind."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2579,9 +2715,17 @@
                               delivered all my recovery medications straight to my door without hassle."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2603,9 +2747,17 @@
                               reminders and caring team make them the best pharmacy in New York."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2627,9 +2779,17 @@
                               pharmacy had me waiting for weeks. The care and urgency they showed was truly remarkable."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2651,9 +2811,17 @@
                               packaged. Their delivery staff is polite, punctual, and reliable every single time."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2675,9 +2843,17 @@
                               that reduced my monthly cost to almost zero. Truly life-changing support!"
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2699,9 +2875,17 @@
                               rushed. Their personalized guidance gives me complete peace of mind."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2723,9 +2907,17 @@
                               delivered all my recovery medications straight to my door without hassle."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2747,9 +2939,17 @@
                               reminders and caring team make them the best pharmacy in New York."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2771,9 +2971,17 @@
                               pharmacy had me waiting for weeks. The care and urgency they showed was truly remarkable."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2795,9 +3003,17 @@
                               packaged. Their delivery staff is polite, punctual, and reliable every single time."
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2819,9 +3035,17 @@
                               that reduced my monthly cost to almost zero. Truly life-changing support!"
                             </p>
                             <div class="testimonial-rating">
-                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i><i class="bi bi-star-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
                             </div>
                           </div>
                         </div>
@@ -2940,7 +3164,9 @@
             data-widget_type="header-sidenav-toggle.default">
             <div class="elementor-widget-container">
               <a href="#" class="ht-nav-toggle">
-                <i aria-hidden="true" class="bi bi-x-lg"></i>
+                <i aria-hidden="true" class="bi bi-x-lg has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+</svg></i>
               </a>
             </div>
           </div>
@@ -2981,7 +3207,7 @@
                 <ul class="list-unstyled mb-0 contact-info">
                   <li class="d-flex">
                     <div class="contact-icon">
-                      <i aria-hidden="true" class="flaticon flaticon-home-address"></i>
+                      <i aria-hidden="true" class="flaticon flaticon-home-address has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 340 340" width="1em" height="1em" fill="currentColor"><path d="M203 285L5 285Q3 285 1.50 283.50Q0 282 0 280Q0 275 5 275L203 275Q205 275 206.50 276.50Q208 278 208 280Q208 282 206.50 283.50Q205 285 203 285M203 285L33 285Q31 285 30 283.50Q29 282 29 280L29 160Q29 158 30 157Q31 156 33 156Q38 156 38 160L38 275L203 275Q205 275 206.50 276.50Q208 278 208 280Q208 282 206.50 283.50Q205 285 203 285M21 170Q12 170 6 163.50Q0 157 0 149Q0 141 6 134L113 27Q124 15 140 15Q156 15 167 27L213 73Q214 74 214 76Q214 78 212.50 79.50Q211 81 209.50 81Q208 81 206 79L160 33Q152 25 140 25Q128 25 120 33L13 140Q9 144 9 149Q9 154 12.50 157.50Q16 161 21 161Q26 161 30 157L137 50Q138 49 140 49Q142 49 143 50L182 89Q184 90 184 92Q184 94 182.50 95.50Q181 97 179 97Q177 97 176 96L140 60L37 164Q30 170 21 170M154 285L88 285Q86 285 84.50 283.50Q83 282 83 280L83 195Q83 189 87 184.50Q91 180 97 180L145 180Q151 180 155 184.50Q159 189 159 195L159 280Q159 282 157.50 283.50Q156 285 154 285M92 195L92 275L150 275L150 195Q150 193 148.50 191.50Q147 190 145 190L97 190Q95 190 93.50 191.50Q92 193 92 195M232 284Q222 284 217 276Q198 244 184 216Q164 173 164 154.50Q164 136 173 120.50Q182 105 197.50 96Q213 87 231.50 87Q250 87 265.50 96Q281 105 290.50 120.50Q300 136 300 155Q300 183 248 276Q241 284 232 284M232 96Q216 96 202.50 104Q189 112 181 125.50Q173 139 173 155.50Q173 172 194 215Q207 241 225 271Q228 275 232.50 275Q237 275 240 271Q268 221 281 190Q291 166 291 155Q291 139 283 125.50Q275 112 261.50 104Q248 96 232 96M232 198Q214 198 201 185.50Q188 173 188 155Q188 137 201 124Q214 111 232 111Q250 111 263 124Q276 137 276 155Q276 173 263 185.50Q250 198 232 198M232 120Q218 120 208 130.50Q198 141 198 155Q198 169 208 179Q218 189 232 189Q246 189 256 179Q266 169 266 155Q266 141 256 130.50Q246 120 232 120M102 241Q100 241 98.50 239.50Q97 238 97 236L97 230Q97 228 98.50 226.50Q100 225 102 225Q106 225 106 230L106 236Q106 238 104.50 239.50Q103 241 102 241"/></svg></i>
                     </div>
 
                     <div class="contact-details">
@@ -2994,7 +3220,7 @@
                   </li>
                   <li class="d-flex">
                     <div class="contact-icon">
-                      <i aria-hidden="true" class="flaticon flaticon-email-3"></i>
+                      <i aria-hidden="true" class="flaticon flaticon-email-3 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 340 340" width="1em" height="1em" fill="currentColor"><path d="M228 99Q226 97 223.50 97Q221 97 219.50 99Q218 101 218 103.50Q218 106 220 107Q221 109 223.50 109Q226 109 228 107.50Q230 106 230 103.50Q230 101 228 99M298 170L244 115Q242 113 239.50 113Q237 113 235.50 115Q234 117 234 119.50Q234 122 236 123L279 167L176 167Q169 167 164.50 162.50Q160 158 160 151L160 48L202 90Q204 92 206.50 92Q209 92 210.50 90Q212 88 212 85.50Q212 83 210 82L157 29Q156 27 153.50 27Q151 27 149 29L56 122Q54 124 54 126.50Q54 129 56 130L197 271Q198 273 200.50 273Q203 273 205 271L298 178Q300 176 300 173.50Q300 171 298 170M74 120L149 46L149 120L74 120M195 178L195 253L74 132L149 132L149 151Q149 162 157 170Q165 178 176 178L195 178M281 178L207 253L207 178L281 178M40 149L6 149Q3 149 1.50 150.50Q0 152 0 154.50Q0 157 1.50 159Q3 161 6 161L40 161Q43 161 44.50 159Q46 157 46 154.50Q46 152 44.50 150.50Q43 149 40 149M58 149Q55 149 53.50 150.50Q52 152 52 154.50Q52 157 53.50 159Q55 161 58 161Q60 161 62 159Q64 157 64 154.50Q64 152 62 150.50Q60 149 58 149M25 87L6 87Q3 87 1.50 89Q0 91 0 93.50Q0 96 1.50 97.50Q3 99 6 99L25 99Q27 99 28.50 97.50Q30 96 30 93.50Q30 91 28.50 89Q27 87 25 87M66 87L44 87Q41 87 39.50 89Q38 91 38 93.50Q38 96 39.50 97.50Q41 99 44 99L66 99Q68 99 70 97.50Q72 96 72 93.50Q72 91 70 89Q68 87 66 87M79 181L46 181Q43 181 41.50 182.50Q40 184 40 186.50Q40 189 41.50 191Q43 193 46 193L79 193Q81 193 83 191Q85 189 85 186.50Q85 184 83 182.50Q81 181 79 181M104 219L22 219Q19 219 17.50 220.50Q16 222 16 224.50Q16 227 17.50 228.50Q19 230 22 230L104 230Q107 230 108.50 228.50Q110 227 110 224.50Q110 222 108.50 220.50Q107 219 104 219"/></svg></i>
                     </div>
 
                     <div class="contact-details">
@@ -3006,7 +3232,7 @@
                   </li>
                   <li class="d-flex">
                     <div class="contact-icon">
-                      <i aria-hidden="true" class="flaticon flaticon-phone-call"></i>
+                      <i aria-hidden="true" class="flaticon flaticon-phone-call has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 340 340" width="1em" height="1em" fill="currentColor"><path d="M272 221L237 186Q228 176 216 176Q204 176 194 186L174 206L163 200Q135 182 111 152Q99 138 94 125L114 106Q124 96 124 84Q124 72 114 62L79 27Q69 17 57.50 17Q46 17 36 27L14 49Q2 61 0 78Q-1 99 9 125Q24 166 57 206Q99 256 156 283Q188 298 212 300L216 300Q238 300 252 284L253 284Q256 280 263 273L272 264Q282 254 282 242Q282 230 272 221M260 253Q260 253 260 253Q260 253 260 253L252 260Q244 268 240 273Q230 283 216 283L213 283Q192 282 164 268Q110 242 70 195Q39 157 25 119Q16 96 18 79Q19 68 26 61L48 39Q53 34 57.50 34Q62 34 67 39L102 74Q111 84 102 93L96 99Q87 109 80 114L80 115Q74 121 77 129L77 130Q83 145 97 163Q123 195 154 214L168 222Q172 224 176 224Q180 224 184 219L206 198Q211 193 215.50 193Q220 193 225 198L260 233Q269 242 260 253M162 71Q187 76 205.50 94Q224 112 228 138Q229 141 231.50 143Q234 145 237 145L238 145Q242 144 244 141Q246 138 245 135Q240 104 218 82Q196 60 165 55Q162 54 159 56Q156 58 155.50 61.50Q155 65 157 68Q159 71 162 71M300 132Q291 82 254.50 45.50Q218 9 167 0Q164 0 161 2Q158 4 157.50 7.50Q157 11 159 13.50Q161 16 165 17Q210 25 242.50 57.50Q275 90 283 135Q283 138 285.50 140Q288 142 291 142L293 142Q296 142 298 139Q300 136 300 132"/></svg></i>
                     </div>
 
                     <div class="contact-details">
@@ -3026,22 +3252,22 @@
                 <ul class="list-inline mb-0">
                   <li class="list-inline-item">
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                      <i aria-hidden="true" class="flaticon flaticon-facebook-app-symbol"></i>
+                      <i aria-hidden="true" class="flaticon flaticon-facebook-app-symbol has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 340 340" width="1em" height="1em" fill="currentColor"><path d="M118 300L173 300L173 163L219 163L226 110L173 110L173 76Q173 63 178.50 56.50Q184 50 200 50L228 50L228 2Q212 0 187 0Q156 0 137 18.50Q118 37 118 70L118 110L72 110L72 163L118 163"/></svg></i>
                     </a>
                   </li>
                   <li class="list-inline-item">
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                      <i aria-hidden="true" class="flaticon flaticon-twitter"></i>
+                      <i aria-hidden="true" class="flaticon flaticon-twitter has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 340 340" width="1em" height="1em" fill="currentColor"><path d="M297 300L178 127L287 0L261 0L166 110L91 0L3 0L118 167L3 300L29 300L129 184L209 300L297 300M222 281L142 168L131 152L38 19L78 19L261 281"/></svg></i>
                     </a>
                   </li>
                   <li class="list-inline-item">
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                      <i aria-hidden="true" class="flaticon flaticon-linkedin"></i>
+                      <i aria-hidden="true" class="flaticon flaticon-linkedin has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 340 340" width="1em" height="1em" fill="currentColor"><path d="M238 300L300 300L300 190Q300 160 295 141Q288 119 273 107Q255 95 225 95Q204 95 188 105Q174 114 167 127L166 127L166 100L106 100L106 300L168 300L168 201Q168 177 175 165Q184 149 205.50 149Q227 149 234 167Q238 178 238 202L238 300M5 300L5 100L67 100L67 300L5 300M36 0Q21 0 10.50 10.50Q0 21 0 36Q0 51 10.50 61.50Q21 72 36 72Q51 72 61.50 61.50Q72 51 72 36Q72 21 61.50 10.50Q51 0 36 0"/></svg></i>
                     </a>
                   </li>
                   <li class="list-inline-item">
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                      <i aria-hidden="true" class="flaticon flaticon-whatsapp"></i>
+                      <i aria-hidden="true" class="flaticon flaticon-whatsapp has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-20 -19 340 340" width="1em" height="1em" fill="currentColor"><path d="M220 179L219 179L219 180L197 169Q191 167 189 167Q187 167 184.50 170.50Q182 174 173 184Q170 187 165 185L162 184Q147 177 135 166.50Q123 156 114 141Q113 138 113.50 136.50Q114 135 117 132Q122 126 125 120Q127 117 125 114L113 86Q112 82 110 81Q108 80 106 80L105 80Q99 79 95 80Q91 81 88 84Q73 100 74.50 117Q76 134 90 153Q106 175 119 186.50Q132 198 146 206Q156 211 175 217Q186 221 199 219Q205 218 213.50 212.50Q222 207 224 201Q226 195 226.50 190Q227 185 226 183.50Q225 182 220 179M256 44L257 43Q222 10 176 2Q133-5 92.50 12Q52 29 28 64Q1 101 1 149Q1 189 21 223L0 300L79 279Q115 299 154 297.50Q193 296 226.50 276.50Q260 257 279 224Q300 190 300 149Q300 119 288.50 92Q277 65 256 44M275 148Q275 183 258 211Q241 239 212.50 255.50Q184 272 151 272Q118 272 87 255L83 252L36 264L49 219L46 214Q27 184 26.50 150.50Q26 117 42 88.50Q58 60 86.50 42.50Q115 25 151 25Q176 25 198.50 34Q221 43 238.50 60.50Q256 78 265.50 101Q275 124 275 148"/></svg></i>
                     </a>
                   </li>
                 </ul>
@@ -3774,7 +4000,9 @@
                                 <div class="subscribe-form">
                                   <input type="email" name="EMAIL" placeholder="Your Email Address" required />
                                   <button class="subscribe-btn" type="submit" value="Sign up">
-                                    <i class="bi bi-send-fill"></i>
+                                    <i class="bi bi-send-fill has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+  <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
+</svg></i>
                                   </button>
                                 </div>
                               </div>
@@ -3802,7 +4030,7 @@
                           <ul class="list-unstyled mb-0 contact-info">
                             <li class="d-inline-flex">
                               <div class="contact-icon">
-                                <i aria-hidden="true" class="flaticon flaticon-pin-1"></i>
+                                <i aria-hidden="true" class="flaticon flaticon-pin-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="8 9 284 284" width="1em" height="1em" fill="currentColor"><path d="M235 80Q224 58 204 44.50Q184 31 161 29Q150 28 139 29Q116 31 96 44.50Q76 58 65 80Q51 107 55 137.50Q59 168 79 191L143 268Q146 272 150 272Q154 272 157 268L221 191Q241 168 245 137.50Q249 107 235 80M150 159Q134 159 123.50 148Q113 137 113 121.50Q113 106 123.50 95Q134 84 150 84Q166 84 177 95Q188 106 187.50 121.50Q187 137 176.50 148Q166 159 150 159"/></svg></i>
                               </div>
 
                               <div class="contact-details">
@@ -3826,7 +4054,7 @@
                           <ul class="list-unstyled mb-0 contact-info">
                             <li class="d-inline-flex">
                               <div class="contact-icon">
-                                <i aria-hidden="true" class="flaticon flaticon-email"></i>
+                                <i aria-hidden="true" class="flaticon flaticon-email has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 340 340" width="1em" height="1em" fill="currentColor"><path d="M285 253L194 162L169 188Q162 195 150.50 195Q139 195 131 188L106 162L15 253Q21 255 26 255L274 255Q279 255 285 253M274 45L26 45Q21 45 15 47L143 175Q146 178 150 178Q154 178 157 175L285 47Q279 45 274 45M93 150L3 59Q0 65 0 71L0 229Q0 235 3 241L93 150M297 59L207 150L297 241Q300 235 300 229L300 71Q300 65 297 59"/></svg></i>
                               </div>
 
                               <div class="contact-details">
@@ -3849,7 +4077,7 @@
                           <ul class="list-unstyled mb-0 contact-info">
                             <li class="d-inline-flex">
                               <div class="contact-icon">
-                                <i aria-hidden="true" class="flaticon flaticon-telephone"></i>
+                                <i aria-hidden="true" class="flaticon flaticon-telephone has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 340 340" width="1em" height="1em" fill="currentColor"><path d="M264 234L228 198Q221 191 212.50 191Q204 191 196 198L174 221Q171 224 168 222L153 214Q124 196 98 164Q84 147 78 132Q77 128 79 126L101 104Q109 96 109 87.50Q109 79 101 71L66 36Q58 29 49.50 29Q41 29 34 36L12 58Q1 68 0 83Q-1 102 8 127Q23 168 56 207Q98 256 155 284Q184 299 209 300Q231 301 243 287L264 266Q271 259 271 250.50Q271 242 264 234M216 149L239 145Q234 113 210 89Q186 65 152 60L148 83Q175 87 193.50 105.50Q212 124 216 149M252 49Q212 8 155 0L152 23Q201 30 236 65Q269 98 277 145L300 141Q291 87 252 49"/></svg></i>
                               </div>
 
                               <div class="contact-details">
@@ -3878,59 +4106,59 @@
                       <div class="marquee-content">
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                         <div class="marquee-text">
                           <span>Meta Specialty Pharmacy</span>
-                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1"></i>
+                          <i aria-hidden="true" class="flaticon flaticon-asterisk-1 has-svg"><svg style="display:inline-block;vertical-align:-0.125em;" xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 322 322" width="1em" height="1em" fill="currentColor"><path d="M291 151L291 149L157 149L284 108L283 105L157 147L264 68L263 66L155 145L234 37L232 36L153 143L195 17L192 16L151 143L151 9L149 9L149 143L108 16L105 17L147 143L68 36L66 37L145 145L37 66L36 68L143 147L17 105L16 108L143 149L9 149L9 151L143 151L16 192L17 195L143 153L36 232L37 234L145 155L66 263L68 264L147 157L105 283L108 284L149 157L149 291L151 291L151 157L192 284L195 283L153 157L232 264L234 263L155 155L263 234L264 232L157 153L283 195L284 192L157 151"/></svg></i>
                         </div>
                       </div>
                     </div>
